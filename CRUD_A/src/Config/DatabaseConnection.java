@@ -8,8 +8,8 @@ import java.sql.DriverManager;
 
 public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/upnvy";
-    private static final String USER = "root"; // Ganti jika berbeda
-    private static final String PASSWORD = ""; // Ganti jika ada password
+    private static final String USER = "root"; 
+    private static final String PASSWORD = ""; 
 
     public static Connection getConnection() {
         try {
