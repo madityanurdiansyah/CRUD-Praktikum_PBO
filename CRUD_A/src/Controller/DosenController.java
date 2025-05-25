@@ -11,12 +11,10 @@ import java.util.List;
 public class DosenController {
     private DosenModel model = new DosenModel();
 
-    // Mengambil semua data dosen
     public List<Dosen> getAllDosen() {
         return model.getAll();
     }
 
-    // Menambahkan data dosen baru
     public void addDosen(String nama, String nidn) {
         Dosen dosen = new Dosen();
         dosen.setNama(nama);
@@ -24,7 +22,6 @@ public class DosenController {
         model.insert(dosen);
     }
 
-    // Mengubah data dosen berdasarkan ID
     public void updateDosen(int id, String nama, String nidn) {
         Dosen dosen = new Dosen();
         dosen.setId(id);
@@ -33,7 +30,6 @@ public class DosenController {
         model.update(dosen);
     }
 
-    // Menghapus data dosen berdasarkan ID
     public void deleteDosen(int id) {
         model.delete(id);
     }
