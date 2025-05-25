@@ -13,7 +13,6 @@ public class Mahasiswa {
     private String nama;
     private String nim;
 
-    // Getters & Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public String getNama() { return nama; }
